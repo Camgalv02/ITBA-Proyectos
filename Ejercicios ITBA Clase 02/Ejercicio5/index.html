@@ -1,0 +1,93 @@
+<!--Ejercicio 5
+Formulario de Registro
+Creá un formulario de registro que solicite la información necesaria para registrarse
+en un sitio web. El formulario debe contener los siguientes campos:
+1. Nombre completo: Utiliza un campo de entrada de texto para que el usuario
+ingrese su nombre completo.
+2. Correo electrónico: Utiliza un campo de entrada de texto de tipo "email" para
+que el usuario ingrese su dirección de correo electrónico.
+3. Contraseña: Utiliza un campo de entrada de texto de tipo "password" para que
+el usuario ingrese su contraseña.4. Género: Utiliza una lista de selección con opciones para "Masculino", "Femenino"
+y "Otro".
+5. País: Utiliza una lista de selección con varias opciones de países para que el
+usuario seleccione su país de residencia.
+6. Intereses: Utiliza casillas de verificación para que el usuario seleccione sus
+intereses. Proporciona opciones como "Deportes", "Música", "Viajes", etc.
+7. Comentarios: Utiliza un área de texto para que el usuario pueda ingresar
+comentarios adicionales.
+8. Acepto los términos y condiciones: Utiliza una casilla de verificación para que el
+usuario acepte los términos y condiciones del sitio web.
+9. Botón de envío: Agrega un botón de envío para que el usuario pueda enviar el
+formulario.
+Además, utilizá etiquetas para asociar correctamente cada campo de entrada con su
+etiqueta descriptiva.-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulario de Registro:</h1>
+    </header>
+
+    <main>
+        <form method="post">
+            <input name="name" id="name" type="text" placeholder="Nombre completo: ">
+            <br>
+            <input name="email" id="email" type="email" placeholder="Correo electrónico: ">
+            <br>
+            <input name="password" type="password" placeholder="Contraseña: ">
+            <br>
+            <br>
+            <label for="pais">Seleccione su pais: </label>
+            <select>
+                <option>Argentina</option>
+                <option>Brasil</option>
+                <option>Colombia</option>
+                <option>Dinamarca</option>
+                <option>Ecuador</option>
+                <option>Francia</option>
+                <option>Grecia</option>
+                <option>Otro</option>
+            </select>
+            <br>
+            <br>
+            <label for="actividades">Intereses: </label>
+            <br>
+            <input type="radio">
+            <label for="radio">Deportes</label>
+            <br>
+            <input type="radio">
+            <label for="radio">Musica</label>
+            <br>
+            <input type="radio">
+            <label for="radio">Viajes</label>
+            <br>
+            <input type="radio">
+            <label for="radio">Otro</label>
+            <br>
+            <br>
+            <label for="text">Comentarios: </label>
+            <br>
+            <input type="textarea">
+            <br>
+            <br>
+            <input type="checkbox" name="checkbox" id="checkbox">  
+            <label for="text">Acepto los términos y condiciones</label>
+            <br>
+            <br>
+            <button class="button" submit>Enviar</a>
+        </form>
+    </main>
+
+</body>
+
+</html>
